@@ -1,7 +1,6 @@
 <h1 align="center"><img src="http://students.washington.edu/plenum/images/logo2-300x300-white.png"/></h1>
 
-Plenum is an Undergraduate Journal of Geography at the University of Washington.
-It is organized and led by undergraduate students with the goal of showcasing undergraduate work while building community amongst the geography department.
+Plenum is an online journal devoted to showcasing the highest quality scholarship in undergraduate geography while building community amongst the Geography Department at the University of Washington. It is managed, produced, and reviewed by undergraduate students from the Department of Geography at the UW.
 
 # Plenum Website Front-End
 Plenum's website is a Vue.js web application built and maintained by Plenum members.
