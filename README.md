@@ -18,19 +18,25 @@ The app is populated via JSON API data from [Contenta CMS](https://www.contentac
 * Your favorite IDE - The student developer pack includes JetBrains. [IntelliJ](https://www.jetbrains.com/idea/) is robust and extendable
 
 ## Getting Setup
-1. [Fork](https://help.github.com/articles/working-with-forks/) this repo into your personal GitHub account
+1. [Fork](https://help.github.com/articles/working-with-forks/) this repo into your personal GitHub account.
 2. [Clone](https://help.github.com/articles/cloning-a-repository/) _your_ repo to your local development machine. *Cloning the OG repo will prevent you from submitting pull requests
 ```
 git clone https://github.com/{{YOUR_GITHUB_ACCOUNT}}/plenum-website.git
 ```
-3. Install project dependencies with NPM
+3. Be sure to work on the _dev_ branch or other relevant dev sub-branches. The master branch is what is live on the site.
+   - Check out "[A Successful Git Branching Model](https://nvie.com/posts/a-successful-git-branching-model/)" to see what we will be following.
+   - Consider naming your branches with a directory format. If you follow this naming pattern, be sure to have a 'master' of the sub-branch
+      - _dev <- dev/search-feature/master <- dev/search-feature/add-api-calls_
+      - _dev <- dev/home-page-styling/master <- dev/home-page-styling/bootstrap_
+      - _dev <- hotfix/arcgis-embed-bug_
+4. Install project dependencies with NPM
 ```
 cd /plenum-website # Navigates into the project directory
 npm install # Node Package Manager installs all the necessary packages to develop the website
 ```
-4. Prepare local [Plenum Contenta CMS](https://github.com/PlenumUW/plenum-drupal)
+5. Prepare local [Plenum Contenta CMS](https://github.com/PlenumUW/plenum-drupal)
 *Without a local copy of Plenum's Contenta CMS, development options will be severely limited. Currently, there are no 'disconnected' alternatives.
-5. Create a new file **.env.development.local** at the project's root directory, paste the following code and replace `{{PORT_NUMBER}}` with the port number of the local server that is hosting your Contenta CMS:
+6. Create a new file **.env.development.local** at the project's root directory, paste the following code and replace `{{PORT_NUMBER}}` with the port number of the local server that is hosting your Contenta CMS:
 ```
 VUE_APP_CONTENTA_API=http://localhost:{{PORT_NUMBER}}/contenta/web/api
 VUE_APP_CONTENTA_BASE=http://localhost:{{PORT_NUMBER}}
