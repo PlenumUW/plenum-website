@@ -25,9 +25,9 @@ git clone https://github.com/{{YOUR_GITHUB_ACCOUNT}}/plenum-website.git
 ```
 3. Be sure to work on the _dev_ branch or other relevant dev sub-branches. The master branch is what is live on the site.
    - Check out "[A Successful Git Branching Model](https://nvie.com/posts/a-successful-git-branching-model/)" to see what we will be following.
-   - Consider naming your branches with a directory format. If you follow this naming pattern, be sure to have a 'master' of the sub-branch
-      - _dev <- dev/search-feature/master <- dev/search-feature/add-api-calls_
-      - _dev <- dev/home-page-styling/master <- dev/home-page-styling/bootstrap_
+   - Consider naming your branches with a directory format. If you follow this naming pattern, be sure to have a 'master' of the sub-branch.
+      - _dev <- feat/search-feature/master <- feat/search-feature/add-api-calls_
+      - _dev <- style/home-page/master <- style/home-page/add-bootstrap_
       - _dev <- hotfix/arcgis-embed-bug_
 4. Install project dependencies with NPM
 ```
