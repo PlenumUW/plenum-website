@@ -16,6 +16,9 @@ The app is populated via JSON API data from [Contenta CMS](https://www.contentac
 * [Node & NPM](https://nodejs.org/en/download/) - Most version should be fine, LTS option is safest
 * [git](https://git-scm.com/downloads) - Install directly or via [Homebrew](https://brew.sh)(Mac) or [Chocolatey](https://chocolatey.org)(Windows)
 * Your favorite IDE - The student developer pack includes JetBrains. [IntelliJ](https://www.jetbrains.com/idea/) is robust and extendable
+   * Install any Vue.js and Typescript plug-ins for your IDE
+   * Install [Vue Dev Tools](https://github.com/vuejs/vue-devtools) for your browser
+
 
 ## Getting Setup
 1. [Fork](https://help.github.com/articles/working-with-forks/) this repo into your personal GitHub account.
@@ -34,6 +37,7 @@ git clone https://github.com/{{YOUR_GITHUB_ACCOUNT}}/plenum-website.git
 cd /plenum-website # Navigates into the project directory
 npm install # Node Package Manager installs all the necessary packages to develop the website
 ```
+   * NPM will prompt you to install **peer dependencies**. Install all of them, **except for JQUERY**.
 5. Prepare local [Plenum Contenta CMS](https://github.com/PlenumUW/plenum-drupal)
 *Without a local copy of Plenum's Contenta CMS, development options will be severely limited. Currently, there are no 'disconnected' alternatives.
 6. Create a new file **.env.development.local** at the project's root directory, paste the following code and replace `{{PORT_NUMBER}}` with the port number of the local server that is hosting your Contenta CMS:
